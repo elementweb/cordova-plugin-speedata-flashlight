@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-speedata-flashlight"
+        version="0.7.0">
 
-<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-	xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-speedata-flashlight"
-    version="1.0.0">
-    
-	<name>Hello</name>
+  <name>Hello</name>
 
-	<engines>
-		<engine name="cordova" version=">=3.4.0"/>
-	</engines>
+  <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
 
-	<asset src="www/speedata-flashlight.js" target="js/speedata-flashlight.js"/>
+  <asset src="www/SpeedataFlashlight.js" target="js/SpeedataFlashlight.js"/>
 
-	<js-module src="www/speedata-flashlight.js" name="SpeedataFlashlight">
-		<clobbers target="SpeedataFlashlight" />
-	</js-module>
+  <js-module src="www/SpeedataFlashlight.js" name="SpeedataFlashlight">
+    <clobbers target="SpeedataFlashlight" />
+  </js-module>
 
-	<platform name="android">
-		<config-file target="res/xml/config.xml" parent="/*">
-			<feature name="SpeedataFlashlight">
-				<param name="android-package" value="com.elementweb.cordova.plugin.speedata.flashlight"/>
-			</feature>
-		</config-file>
-		<source-file src="src/android/SpeedataFlashlight.java" target-dir="src/com/elementweb/cordova" />
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="SpeedataFlashlight">
+        <param name="android-package" value="com.elementweb.cordova.plugin.speedata.flashlight.SpeedataFlashlight"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/SpeedataFlashlight.java" target-dir="src/com/elementweb/cordova-plugins/speedata-flashlight"/>
   </platform>
+
+
 </plugin>
