@@ -13,8 +13,8 @@
 
 	<asset src="www/speedata-flashlight.js" target="js/speedata-flashlight.js"/>
 
-	<js-module src="www/speedata-flashlight.js" name="speedata-flashlight">
-		<clobbers target="speedata-flashlight" />
+	<js-module src="www/speedata-flashlight.js" name="SpeedataFlashlight">
+		<clobbers target="SpeedataFlashlight" />
 	</js-module>
 
 	<platform name="android">
